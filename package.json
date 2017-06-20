@@ -1,0 +1,31 @@
+{
+  "name": "mycanal-landing",
+  "version": "0.0.1",
+  "description": "Project to present myCanal and the features",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Striptik/myCanal-landing.git"
+  },
+  "keywords": [
+    "myCanal",
+    "television",
+    "service",
+    "svod",
+    "presentation"
+  ],
+  "author": "Kevin Loiseleur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Striptik/myCanal-landing/issues"
+  },
+  "homepage": "https://github.com/Striptik/myCanal-landing#readme",
+  "dependencies": {
+    "fullpage.js": "^2.9.4",
+    "jquery": "^3.2.1",
+    "nodemon": "^1.11.0"
+  }
+}
