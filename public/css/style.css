@@ -1,5 +1,207 @@
+/*FONT*/
+@font-face {
+	font-family: "Canal";
+	font-style: italic;
+	font-weight: bold;
+	src: url('../font/CanalBoldItalique.otf');
+}
+@font-face {
+	font-family: "Canal";
+	font-weight: bold;
+	src: url('../font/CanalBoldRomain.otf');
+}
+@font-face {
+	font-family: "Canal";
+	font-weight: normal;
+	src: url('../font/CanalDemiRomain.otf');
+}
+@font-face {
+	font-family: "Canal";
+	font-weight: normal;
+	font-style: italic;
+	src: url('../font/CanalDemItalique.otf');
+}
+@font-face {
+	font-family: "Canal";
+	font-weight: lighter;
+	font-style: italic;
+	src: url('../font/CanalLightItalique.otf');
+}
+@font-face {
+	font-family: "Canal";
+	font-weight: lighter;
+	src: url('../font/CanalLightRomain.otf');
+}
+@font-face {
+	font-family: "CanalSymboles";
+	font-weight: normal;
+	src: url('../font/CanalSymboles.otf');
+}
+
+/*GENERAL*/
+body{
+	margin: 0;
+	font-family: Canal;
+	font-size: 12px;
+	color: white;
+}
 
 #fullpage {
     color: white;
-    text-align: center;
+}
+
+.section{
+	padding: 0 10px 0 ;
+}
+
+h1{
+	font-size: 3.5em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+p{
+	font-size: 1.8em;
+	font-weight: lighter;
+	text-transform: uppercase;
+}
+
+a{
+	color: white;
+	text-decoration: none;
+}
+
+img{
+	width: 100%;
+	vertical-align: bottom;
+}
+
+.btn{
+	padding: 10px 40px;
+	border-radius: 5px;
+	font-size: 1.6em;
+}
+
+#personnalisation div, #programmes div, #partage div, #chatbot div{
+	width: 49%;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+}
+
+/*HEADER*/
+#header{
+	background-image: url(../images/header_bg.png);
+	text-align: center;
+}
+
+/*PERSONNALISATION*/
+#personnalisation{
+	background-color: #1d1d1d;
+}
+
+/*PROGRAMMES*/
+#programmes{
+	background-color: #52b64f;
+}
+
+/*PARTAGE*/
+#partage{
+	background-color: #fbb300;
+}
+
+/*CHATBOT*/
+#chatbot{
+	background-color: #00d2ff;
+}
+
+#chatbot .btn{
+	color: #00d2ff;
+	background-color: #fff;
+}
+
+/*PRICING*/
+#pricing{
+	text-align: center;
+	background-image: url(../images/pricing_bg.png);
+}
+
+#pricing h1{
+	text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.35);
+}
+
+#pricing .blue{
+	display: block;
+	color: #00d2ff;
+}
+
+#pricing p{
+	margin-top: 0;
+	font-size: 2.6em;
+	text-transform: uppercase;
+}
+
+#pricing .btn{
+	background-color: #00d2ff;
+}
+
+/*FOOTER*/
+#footer{
+	background-color: #22252a;
+	font-size: 1.1em;
+}
+
+#footer ul{
+	/*width: calc(100% / 4);*/
+	display: inline-block;
+	vertical-align: top;
+	width: 19%;
+	list-style: none;
+}
+
+#footer ul.abonne li:last-child{
+	color: #757473;
+}
+
+/*SCROLL ICON*/
+
+/*Animation Keyframes*/
+@keyframes scroll_2 {
+  0%   { transform: translateY(0); opacity: 1; }
+  25%  { opacity: 1; }
+  75%  { transform: translateY(.75em); opacity: 0; }
+  100% { transform: translateY(0); opacity: 0; }
+}
+
+/*CSS/LESS*/
+.scroll {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.scroll-icon {
+	display: block;
+	position: relative;
+	height: 3em;
+	width: 1.5em;
+	border: .25em solid #fff;
+	border-radius: 1em;
+}
+
+.scroll-icon__pivot {
+	display: block;
+	position: absolute;
+	left: 50%;
+	background: #fff;
+	transform-origin: top center;
+	backface-visibility: hidden;
+	height: .5em;
+	width: .5em;
+	top: .625em;
+	margin-left: -.25em;
+	border-radius: 50%;
+	animation: scroll_2 2s ease-out infinite;
 }

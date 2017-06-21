@@ -1,27 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>myCanal</title>
-    <link rel="icon" href="public/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="node_modules/fullpage.js/dist/jquery.fullpage.css" />
-    <link rel="stylesheet" type="text/css" href="public/css/style.css" />
+	<meta charset="UTF-8">
+	<title>MyCanal</title>
+	<link rel="icon" href="public/images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="node_modules/fullpage.js/dist/jquery.fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="public/css/style.css" />
 </head>
 <body>
+	<div id="fullpage">
+		<!-- HEADER -->
+		<div id="header" class="section header active" data-anchor="header">
+			<img src="../images/logo_mycanal.png" alt="logo_mycanal">
+			<h1>Une expérience proche de vous</h1>
+			<div class="scroll">
+				<span class="scroll-icon">
+					<span class="scroll-icon__pivot"></span>
+				</span>
+			</div>
 
-    <div id="fullpage">
-        <div class="section header active" data-anchor="Boucle">HEADER</div> <!-- Active optionnel ? -->
-        <div class="section" data-anchor="BurLegende">Le bureau des légendes</div>
-        <div class="section" data-anchor="Foot">Foot</div>
-        <div class="section" data-anchor="Fonctionnalites">
-            <div class="slide">Visionnage</div>
-            <div class="slide">Personalisation</div>
-            <div class="slide">Outils</div>
-        </div>
-        <div class="section" data-anchor="Chatbot">Chatbot</div>
-        <div class="section" data-anchor="Pricing">Pricing</div>
-        <div class="section" data-anchor="Footer">Footer</div>
-    </div>
+		</div> <!-- Active optionnel ? -->
+
+		<!-- CONTENT -->
+		<div id="personnalisation" class="section" data-anchor="personnalisation">
+			<div>
+				<img src="public/images/personnage_personnalisation.png" alt="malotru">
+			</div>
+			<div>
+				<h1>LA PERSONNALISATION NOTRE MISSION</h1>
+				<p>
+					Tous nos agents Canal+ sont là pour rendre votre experience au plus proche de vos attentes et vous proposer les programmes fait pour vous.
+				</p>
+			</div>
+		</div>
+		<div id="programmes" class="section" data-anchor="programmes">
+			<div>
+				<h1>DRIBBLEZ AVEC VOS PROGRAMMES</h1>
+				<p>
+					à domicile ou à l’extérieur, regardez vos programmes où que vous soyez grâce au téléchargement. Visionnez vos programmes en avant et en arrière jusqu'à 8h après le direct.
+				</p>
+			</div>
+			<div>
+				<img src="public/images/personnage_programmes.png" alt="tiago">
+			</div>
+		</div>
+		<div id="partage" class="section" data-anchor="partage">
+			<!-- <div class="slide">Visionnage</div>
+			<div class="slide">Personalisation</div>
+			<div class="slide">Outils</div> -->
+			<div>
+				<img src="public/images/personnage_partage.png" alt="vice_versa">
+			</div>
+			<div>
+				<h1>PARTAGEZ AVEC VOS PROCHES</h1>
+				<p>
+					En famille ou entre amis, dans la joie et la bonne humeur, partagez vos contenus préférés en rejoignant la communauté My Canal.
+				</p>
+			</div>
+		</div>
+		<div id="chatbot" class="section" data-anchor="chatbot">
+			<div>
+				<h1>CHATTEZ AVEC NOUS</h1>
+				<p>
+					Nous sommes toujours là pour vous. Nous répondons à toutes vos questions sur la plateforme et l’application. Venez papoter avec nous sur le chatbot.
+				</p>
+				<a href="#" class="btn">Une petite question ?</a>
+			</div>
+			<div>
+				<img src="public/images/personnage_chatbot.png" alt="catherine_et_liliane">
+			</div>
+		</div>
+		<div id="pricing" class="section" data-anchor="pricing">
+			<h1>
+				<span class="blue">Un mois offert</span>
+				aux offres canal
+			</h1>
+			<p>sans engagement</p>
+			<a href="#" class="btn">Découvrir nos offres</a>
+		</div>
+
+		<!-- FOOTER -->
+		<div id="footer" class="section" data-anchor="footer">
+			<div class="logo"></div>
+			<div class="content">
+				<ul class="abonne">
+					<li>Vous êtes abonné ?</li>
+					<li>Tous les programmes de votre abonnement sont sur MyCanal sur PC/Mac, smartphones et tablettes.</li>
+				</ul>
+				<ul>
+					<li>Cookies</li>
+					<li>CGU</li>
+				</ul>
+				<ul>
+					<li>Mentions légales</li>
+					<li>* Modalités de l'offre</li>
+				</ul>
+				<ul>
+					<li>Restez connectés</li>
+					<li>
+						<i class="facebook"></i>
+						<i class="twitter"></i>
+						<i class=""></i>
+						<i class="youtube"></i>
+					</li>
+				</ul>
+			</div>
+			<div>CANAL+ 2017</div>
+		</div>
+	</div>
 
 
     <!-- Scripts (fullPage, -->
