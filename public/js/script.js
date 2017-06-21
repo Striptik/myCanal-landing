@@ -7,7 +7,7 @@ $(document).ready(function() {
         //Navigation
         //menu: '#menu',
         //lockAnchors: true,
-        anchors:['Boucle', 'BurLegende', 'programmes', 'partage', 'chatbot', 'offres', 'infos'],
+        anchors:['header', 'personnalisation', 'programmes', 'partage', 'chatbot', 'offres', 'infos'],
         navigation: true,
         navigationPosition: 'right',
         navigationTooltips: ['Présentation', 'Personnalisation', 'Programmes', 'Partage','Chatbot', 'Offres', 'Infos Utiles'],
