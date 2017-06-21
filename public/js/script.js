@@ -7,10 +7,10 @@ $(document).ready(function() {
         //Navigation
         //menu: '#menu',
         //lockAnchors: true,
-        anchors:['Boucle', 'BurLegende', 'Foot', 'Fonctionnalités', 'Chatbot', 'Pricing', 'Footerz'],
+        anchors:['Boucle', 'BurLegende', 'programmes', 'partage', 'chatbot', 'offres', 'infos'],
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['Boucle', 'BurLegende', 'Foot', 'Fonctionnalites','Chatbot', 'Pricing', 'Footera'],
+        navigationTooltips: ['Présentation', 'Personnalisation', 'Programmes', 'Partage','Chatbot', 'Offres', 'Infos Utiles'],
         showActiveTooltip: false,
         //slidesNavigation: false,
         slidesNavPosition: 'bottom',
@@ -51,7 +51,7 @@ $(document).ready(function() {
         //Design
         controlArrows: true,
         verticalCentered: true,
-        sectionsColor : ['#1d1d1d', '#1d1d1d', '#1d1d1d', '#1d1d1d', '#1d1d1d', '#1d1d1d', '#1d1d1d'],
+        sectionsColor : ['#1d1d1d', '#1d1d1d', '#52b64f', '#fbb300', '#00d2ff', '#1d1d1d', '#22252a'],
         paddingTop: '3em',
         paddingBottom: '10px',
         fixedElements: '#header, .footer',

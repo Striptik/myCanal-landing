@@ -110,6 +110,8 @@ img{
 	background-color: #fbb300;
 }
 
+
+
 /*CHATBOT*/
 #chatbot{
 	background-color: #00d2ff;
@@ -120,38 +122,40 @@ img{
 	background-color: #fff;
 }
 
-/*PRICING*/
-#pricing{
+
+
+/*OFFRES*/
+#offres {
 	text-align: center;
 	background-image: url(../images/pricing_bg.png);
 }
 
-#pricing h1{
+#offres h1{
 	text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.35);
 }
 
-#pricing .blue{
+#offres .blue{
 	display: block;
 	color: #00d2ff;
 }
 
-#pricing p{
+#offres p{
 	margin-top: 0;
 	font-size: 2.6em;
 	text-transform: uppercase;
 }
 
-#pricing .btn{
+#offres .btn{
 	background-color: #00d2ff;
 }
 
-/*FOOTER*/
-#footer{
+/*INFOS*/
+#infos {
 	background-color: #22252a;
 	font-size: 1.1em;
 }
 
-#footer ul{
+#infos ul{
 	/*width: calc(100% / 4);*/
 	display: inline-block;
 	vertical-align: top;
@@ -159,7 +163,7 @@ img{
 	list-style: none;
 }
 
-#footer ul.abonne li:last-child{
+#infos ul.abonne li:last-child{
 	color: #757473;
 }
 
