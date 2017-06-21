@@ -4,13 +4,10 @@
 
 $(document).ready(function() {
     $('#fullpage').fullpage({
-        //Navigation
-        //menu: '#menu',
-        //lockAnchors: true,
-        anchors:['header', 'personnalisation', 'programmes', 'partage', 'chatbot', 'offres', 'infos'],
+        // anchors:['presentation', 'personnalisation', 'programmes', 'partage', 'chatbot', 'offres', 'infos'],
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['Présentation', 'Personnalisation', 'Programmes', 'Partage','Chatbot', 'Offres', 'Infos Utiles'],
+        navigationTooltips: ['Presentation', 'Personnalisation', 'Programmes', 'Partage','Chatbot', 'Offres', 'Infos'],
         showActiveTooltip: false,
         //slidesNavigation: false,
         slidesNavPosition: 'bottom',
@@ -32,11 +29,10 @@ $(document).ready(function() {
         scrollHorizontally: false,
         interlockedSlides: false,
         dragAndMove: false,
-        offsetSections: false,
+        offsetSections: true,
         resetSliders: false,
         fadingEffect: false,
-        normalScrollElements: '#element1, .element2',
-        scrollOverflow: false,
+        scrollOverflow: true,
         scrollOverflowReset: false,
         scrollOverflowOptions: null,
         touchSensitivity: 15,
@@ -46,15 +42,14 @@ $(document).ready(function() {
         //Accessibility
         keyboardScrolling: true,
         animateAnchor: true,
-        recordHistory: true,
+        recordHistory: false,
 
         //Design
         controlArrows: true,
-        verticalCentered: true,
+        verticalCentered: false,
         sectionsColor : ['#1d1d1d', '#1d1d1d', '#52b64f', '#fbb300', '#00d2ff', '#1d1d1d', '#22252a'],
         paddingTop: '3em',
         paddingBottom: '10px',
-        fixedElements: '#header, .footer',
         responsiveWidth: 0,
         responsiveHeight: 0,
         responsiveSlides: false,

@@ -50,8 +50,12 @@ body{
     color: white;
 }
 
-.section{
-	padding: 0 10px 0 ;
+.section {
+
+}
+
+.section-bg {
+	background-size: cover;
 }
 
 h1{
@@ -82,39 +86,47 @@ img{
 	font-size: 1.6em;
 }
 
-#personnalisation div, #programmes div, #partage div, #chatbot div{
-	width: 49%;
-	display: inline-block;
-	vertical-align: middle;
-	text-align: left;
-}
+
+
+
+
+
+
+
+/*#personnalisation div, #programmes div, #partage div, #chatbot div{*/
+	/*width: 49%;*/
+	/*display: inline-block;*/
+	/*vertical-align: middle;*/
+	/*text-align: left;*/
+/*}*/
 
 /*HEADER*/
-#header{
+#presentation {
 	background-image: url(../images/header_bg.png);
-	text-align: center;
+	/*text-align: center;*/
 }
 
 /*PERSONNALISATION*/
 #personnalisation{
-	background-color: #1d1d1d;
+
 }
 
 /*PROGRAMMES*/
-#programmes{
-	background-color: #52b64f;
+#programmes {
+
 }
 
+
 /*PARTAGE*/
-#partage{
-	background-color: #fbb300;
+#partage {
+
 }
 
 
 
 /*CHATBOT*/
-#chatbot{
-	background-color: #00d2ff;
+#chatbot {
+
 }
 
 #chatbot .btn{
@@ -126,7 +138,6 @@ img{
 
 /*OFFRES*/
 #offres {
-	text-align: center;
 	background-image: url(../images/pricing_bg.png);
 }
 
@@ -149,10 +160,11 @@ img{
 	background-color: #00d2ff;
 }
 
+
+
 /*INFOS*/
 #infos {
-	background-color: #22252a;
-	font-size: 1.1em;
+
 }
 
 #infos ul{
@@ -166,6 +178,8 @@ img{
 #infos ul.abonne li:last-child{
 	color: #757473;
 }
+
+
 
 /*SCROLL ICON*/
 
