@@ -38,7 +38,13 @@
 	src: url('../font/CanalSymboles.otf');
 }
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 /*GENERAL*/
+*{
+	box-sizing: border-box;
+}
+
 body{
 	margin: 0;
 	font-family: Canal;
@@ -50,8 +56,23 @@ body{
     color: white;
 }
 
-.section {
+#fp-nav ul li a span{
+	/*border: 1px solid white;
+	background: none;*/
+	background: white;
+}
 
+#fp-nav ul li a.active span{
+	background: white;
+}
+
+#fp-nav ul li .fp-tooltip.right{
+	font-family: opensans;
+	font-size: 12px;
+}
+
+#personnalisation .section, #programmes .section, #partage .section, #chatbot .section{
+	padding: 3em 5.1em;
 }
 
 .section-bg {
@@ -86,47 +107,107 @@ img{
 	font-size: 1.6em;
 }
 
-
-
-
-
-
-
-
-/*#personnalisation div, #programmes div, #partage div, #chatbot div{*/
-	/*width: 49%;*/
-	/*display: inline-block;*/
-	/*vertical-align: middle;*/
-	/*text-align: left;*/
-/*}*/
-
 /*HEADER*/
-#presentation {
+#presentation{
 	background-image: url(../images/header_bg.png);
-	/*text-align: center;*/
+}
+
+#presentation .fp-scrollable{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+#presentation .logo{
+	width: 28%;
+	max-width: 360px;
+	margin: 40px 0 100px;
+}
+
+#presentation svg{
+	width: 70px;
+	margin-top: 20px;
+	fill-opacity: 0.8;
+}
+
+#presentation .scroll-icon{
+	bottom: -120px;
+	margin: auto;
 }
 
 /*PERSONNALISATION*/
 #personnalisation{
+	display: flex;
+}
 
+#personnalisation div:last-child{
+	max-width: 66%;
+	padding: 4em;
+	align-self: center;
 }
 
 /*PROGRAMMES*/
 #programmes {
+	display: flex;
+}
 
+#programmes div:first-child{
+	max-width: 66%;
+	padding: 4em;
+	align-self: center;
+}
+
+#programmes div img{
+	position: relative;
+	bottom: -20px;
 }
 
 
 /*PARTAGE*/
 #partage {
-
+	display: flex;
 }
 
+#partage div:last-child{
+	align-self: center;
+	max-width: 55%;
+	padding: 2em;
+}
 
+#partage div:first-child{
+	align-self: flex-end;
+}
+
+#partage div:first-child img{
+	position: relative;
+	width: 100%;
+	bottom: -20px;
+}
 
 /*CHATBOT*/
-#chatbot {
+#chatbot{
+	display: flex;
+	padding-left: 5.1em;
+}
 
+#chatbot div:first-child{
+	align-self: center;
+	max-width: 44%;
+}
+
+#chatbot div:last-child{
+	align-self: flex-end;
+}
+
+#chatbot div:last-child img{
+	position: relative;
+	width: 100%;
+	bottom: -20px;
+	right: -65px;
+}
+
+#chatbot p{
+	margin-bottom: 50px;
 }
 
 #chatbot .btn{
@@ -137,52 +218,66 @@ img{
 
 
 /*OFFRES*/
-#offres {
+#offres{
 	background-image: url(../images/pricing_bg.png);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
 }
 
-#offres h1{
+#offres .section{
+	padding: 0 !important;
+}
+
+#offres .content h1{
 	text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.35);
 }
 
-#offres .blue{
+#offres .content .blue{
 	display: block;
 	color: #00d2ff;
 }
 
-#offres p{
-	margin-top: 0;
+#offres .content p{
+	margin: 0 0 80px;
 	font-size: 2.6em;
 	text-transform: uppercase;
 }
 
-#offres .btn{
+#offres .content .btn{
 	background-color: #00d2ff;
 }
 
-
-
-/*INFOS*/
-#infos {
-
+#offres .footer{
+	background: #22252a;
+	padding: 2em;
 }
 
-#infos ul{
-	/*width: calc(100% / 4);*/
-	display: inline-block;
-	vertical-align: top;
-	width: 19%;
+#offres .footer ul{
+	padding: 0;
+}
+
+#offres .footer ul li{
 	list-style: none;
+	display: inline-block;
 }
 
-#infos ul.abonne li:last-child{
+#offres .footer ul:last-child li{
+	padding: 10px;
+}
+
+#offres .footer ul li img{
+	width: 20%;
+}
+
+#offres .footer ul.abonne li:last-child{
 	color: #757473;
 }
 
 
 
 /*SCROLL ICON*/
-
 /*Animation Keyframes*/
 @keyframes scroll_2 {
   0%   { transform: translateY(0); opacity: 1; }
@@ -203,9 +298,9 @@ img{
 .scroll-icon {
 	display: block;
 	position: relative;
-	height: 3em;
-	width: 1.5em;
-	border: .25em solid #fff;
+	height: 45px;
+	width: 26px;
+	border: 2px solid #fff;
 	border-radius: 1em;
 }
 
