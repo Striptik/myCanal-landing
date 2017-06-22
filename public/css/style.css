@@ -121,17 +121,23 @@ img{
 #presentation .logo{
 	width: 28%;
 	max-width: 360px;
-	margin: 40px 0 100px;
+	margin: 20px 0 100px;
+}
+
+#presentation .btn{
+	background-color: #00d2ff;
 }
 
 #presentation svg{
+	display: block;
 	width: 70px;
-	margin-top: 20px;
+	margin: 54px auto 50px;
 	fill-opacity: 0.8;
 }
 
 #presentation .scroll-icon{
-	bottom: -120px;
+	position: relative;
+	bottom: -90px;
 	margin: auto;
 }
 
@@ -171,7 +177,7 @@ img{
 #partage div:last-child{
 	align-self: center;
 	max-width: 55%;
-	padding: 2em;
+	padding: 0px 6em 0px 0px;
 }
 
 #partage div:first-child{
