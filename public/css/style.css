@@ -71,7 +71,7 @@ body{
 	font-size: 12px;
 }
 
-#personnalisation, #programmes, #partage, #chatbot{
+#personnalisation, #programmes{
 	padding: 3em 5em;
 }
 
@@ -151,11 +151,6 @@ video::-webkit-media-controls {
 /*solves problem with overflowing video in Mac with Chrome */
 #presentation{
 	padding: 0;
-}
-
-#presentation .fp-scrollable{
-	display: flex;
-	justify-content: center;
 	text-align: center;
 }
 
@@ -177,9 +172,11 @@ video::-webkit-media-controls {
 }
 
 #presentation .scroll-icon{
-	position: relative;
-	bottom: -90px;
-	margin: auto;
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+
+	transform: translateX(-50%);
 }
 
 /*PERSONNALISATION*/
@@ -187,7 +184,7 @@ video::-webkit-media-controls {
 	display: flex;
 }
 
-#personnalisation div:last-child{
+#personnalisation .text_section{
 	max-width: 64%;
 	padding: 0 4em 0 6em;
 	align-self: center;
@@ -198,13 +195,13 @@ video::-webkit-media-controls {
 	display: flex;
 }
 
-#programmes div:first-child{
+#programmes .text_section{
 	max-width: 66%;
 	padding: 0 5em 0 2em;
 	align-self: center;
 }
 
-#programmes div img{
+#programmes .image_section img{
 	position: relative;
 	bottom: -20px;
 }
@@ -215,20 +212,14 @@ video::-webkit-media-controls {
 	display: flex;
 }
 
-#partage div:last-child{
+#partage .text_section{
 	align-self: center;
 	max-width: 55%;
 	padding: 0px 6em 0px 0px;
 }
 
-#partage div:first-child{
+#partage .image_section{
 	align-self: flex-end;
-}
-
-#partage div:first-child img{
-	position: relative;
-	width: 100%;
-	bottom: -20px;
 }
 
 /*CHATBOT*/
@@ -242,13 +233,9 @@ video::-webkit-media-controls {
 	max-width: 44%;
 }
 
-#chatbot .image_section{
-	align-self: flex-end;
-	margin-left: auto
-}
-
-#chatbot div:last-child {
+#chatbot .image_section {
 	margin-left: auto;
+	align-self: flex-end;
 }
 
 #chatbot p{
@@ -348,7 +335,7 @@ video::-webkit-media-controls {
 }
 
 .slideInUp {
-  animation-name: slideInUp;
+  animation: slideInUp 2s ease-out forwards;
 }
 
 @keyframes slideInDown {
@@ -363,6 +350,6 @@ video::-webkit-media-controls {
 }
 
 .slideInDown {
-  animation-name: slideInDown;
-  animation-delay: 1s;
+  animation: slideInDown 2s ease-out forwards;
+
 }

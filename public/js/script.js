@@ -4,10 +4,10 @@
 
 $(document).ready(function() {
     $('#fullpage').fullpage({
-        // anchors:['presentation', 'personnalisation', 'programmes', 'partage', 'chatbot', 'offres', 'infos'],
+        // anchors:['presentation', 'personnalisation', 'programmes', 'partage', 'chatbot', 'offres'],
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['Presentation', 'Personnalisation', 'Programmes', 'Partage','Chatbot', 'Offres', 'Infos'],
+        navigationTooltips: ['Presentation', 'Personnalisation', 'Programmes', 'Partage','Chatbot', 'Offres'],
         showActiveTooltip: false,
         //slidesNavigation: false,
         slidesNavPosition: 'bottom',
@@ -17,7 +17,7 @@ $(document).ready(function() {
         scrollingSpeed: 800,
         autoScrolling: true,
         fitToSection: true,
-        fitToSectionDelay: 1000,
+        fitToSectionDelay: 800,
         scrollBar: false,
         easing: 'easeInOutCubic',
         easingcss3: 'ease',
@@ -53,7 +53,7 @@ $(document).ready(function() {
         responsiveWidth: 0,
         responsiveHeight: 0,
         responsiveSlides: false,
-        parallax: false,
+        parallax: true,
         parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
 
         //Custom selectors
@@ -68,7 +68,8 @@ $(document).ready(function() {
         afterRender: function(){},
         afterResize: function(){},
         afterResponsive: function(isResponsive){},
-        afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+        afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){
+	   },
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
     });
 });
