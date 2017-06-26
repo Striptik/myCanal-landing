@@ -354,8 +354,8 @@ video::-webkit-media-controls {
 	z-index: 4;
 	width: 100%;
 	left: 0;
-	top: 0;
-	bottom: 0;
+	top: 0%;
+	bottom: 0%;
 
 	/*
 	* Preventing flicker on some browsers
@@ -368,7 +368,36 @@ video::-webkit-media-controls {
 
 /*solves problem with overflowing video in Mac with Chrome */
 #presentation{
-	overflow: hidden;
 	padding: 0;
-	text-align: center;
+}
+/*ANIMATIONS ELEMENTS*/
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  animation-name: slideInUp;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInDown {
+  animation-name: slideInDown;
+  animation-delay: 1s;
 }
