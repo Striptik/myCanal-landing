@@ -71,8 +71,8 @@ body{
 	font-size: 12px;
 }
 
-#personnalisation .section, #programmes .section, #partage .section, #chatbot .section{
-	padding: 3em 5.1em;
+#personnalisation, #programmes, #partage, #chatbot{
+	padding: 3em 5em;
 }
 
 .section-bg {
@@ -108,225 +108,7 @@ img{
 }
 
 /*HEADER*/
-/*#presentation{
-	background-image: url(../images/bouclemycanal.mp4);
-	background-position: center center;
-	background-size: contain;
-}*/
-
-#presentation .fp-scrollable{
-	display: flex;
-	justify-content: center;
-	text-align: center;
-}
-
-#presentation .logo{
-	width: 28%;
-	max-width: 360px;
-	margin: 20px 0 100px;
-}
-
-#presentation .btn{
-	background-color: #00d2ff;
-}
-
-#presentation svg{
-	display: block;
-	width: 70px;
-	margin: 54px auto 50px;
-	fill-opacity: 0.8;
-}
-
-#presentation .scroll-icon{
-	position: relative;
-	bottom: -90px;
-	margin: auto;
-}
-
-/*PERSONNALISATION*/
-#personnalisation{
-	display: flex;
-}
-
-#personnalisation div:last-child{
-	max-width: 64%;
-	padding: 6em;
-	align-self: center;
-}
-
-/*PROGRAMMES*/
-#programmes {
-	display: flex;
-}
-
-#programmes div:first-child{
-	max-width: 66%;
-	padding: 4em;
-	align-self: center;
-}
-
-#programmes div img{
-	position: relative;
-	bottom: -20px;
-}
-
-
-/*PARTAGE*/
-#partage {
-	display: flex;
-}
-
-#partage div:last-child{
-	align-self: center;
-	max-width: 55%;
-	padding: 0px 6em 0px 0px;
-}
-
-#partage div:first-child{
-	align-self: flex-end;
-}
-
-#partage div:first-child img{
-	position: relative;
-	width: 100%;
-	bottom: -20px;
-}
-
-/*CHATBOT*/
-#chatbot{
-	display: flex;
-	padding-left: 5.1em;
-}
-
-#chatbot div:first-child{
-	align-self: center;
-	max-width: 44%;
-}
-
-#chatbot div:last-child{
-	align-self: flex-end;
-}
-
-#chatbot div:last-child img{
-	position: relative;
-	width: 100%;
-	bottom: -20px;
-	right: -65px;
-}
-
-#chatbot p{
-	margin-bottom: 50px;
-}
-
-#chatbot .btn{
-	color: #00d2ff;
-	background-color: #fff;
-}
-
-
-
-/*OFFRES*/
-#offres{
-	background-image: url(../images/pricing_bg.png);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-}
-
-#offres .section{
-	padding: 0 !important;
-}
-
-#offres .content h1{
-	text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.35);
-}
-
-#offres .content .blue{
-	display: block;
-	color: #00d2ff;
-}
-
-#offres .content p{
-	margin: 0 0 80px;
-	font-size: 2.6em;
-	text-transform: uppercase;
-}
-
-#offres .content .btn{
-	background-color: #00d2ff;
-}
-
-#offres .footer{
-	background: #22252a;
-	padding: 2em;
-}
-
-#offres .footer ul{
-	padding: 0;
-}
-
-#offres .footer ul li{
-	list-style: none;
-	display: inline-block;
-}
-
-#offres .footer ul:last-child li{
-	padding: 10px;
-}
-
-#offres .footer ul li img{
-	width: 20%;
-}
-
-#offres .footer ul.abonne li:last-child{
-	color: #757473;
-}
-
-
-
-/*SCROLL ICON*/
-/*Animation Keyframes*/
-@keyframes scroll_2 {
-  0%   { transform: translateY(0); opacity: 1; }
-  25%  { opacity: 1; }
-  75%  { transform: translateY(.75em); opacity: 0; }
-  100% { transform: translateY(0); opacity: 0; }
-}
-
-/*CSS/LESS*/
-.scroll {
-	flex: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
-.scroll-icon {
-	display: block;
-	position: relative;
-	height: 45px;
-	width: 26px;
-	border: 2px solid #fff;
-	border-radius: 1em;
-}
-
-.scroll-icon__pivot {
-	display: block;
-	position: absolute;
-	left: 50%;
-	background: #fff;
-	transform-origin: top center;
-	backface-visibility: hidden;
-	height: .5em;
-	width: .5em;
-	top: .625em;
-	margin-left: -.25em;
-	border-radius: 50%;
-	animation: scroll_2 2s ease-out infinite;
-}
-
+/*VIDEO BG*/
 #myVideo{
 	position: absolute;
 	right: 0;
@@ -370,6 +152,190 @@ video::-webkit-media-controls {
 #presentation{
 	padding: 0;
 }
+
+#presentation .fp-scrollable{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+#presentation .logo{
+	width: 28%;
+	max-width: 360px;
+	margin: 20px 0 100px;
+}
+
+#presentation .btn{
+	background-color: #00d2ff;
+}
+
+#presentation svg{
+	display: block;
+	width: 70px;
+	margin: 54px auto 50px;
+	fill-opacity: 0.8;
+}
+
+#presentation .scroll-icon{
+	position: relative;
+	bottom: -90px;
+	margin: auto;
+}
+
+/*PERSONNALISATION*/
+#personnalisation{
+	display: flex;
+}
+
+#personnalisation div:last-child{
+	max-width: 64%;
+	padding: 0 4em 0 6em;
+	align-self: center;
+}
+
+/*PROGRAMMES*/
+#programmes {
+	display: flex;
+}
+
+#programmes div:first-child{
+	max-width: 66%;
+	padding: 0 5em 0 2em;
+	align-self: center;
+}
+
+#programmes div img{
+	position: relative;
+	bottom: -20px;
+}
+
+
+/*PARTAGE*/
+#partage {
+	display: flex;
+}
+
+#partage div:last-child{
+	align-self: center;
+	max-width: 55%;
+	padding: 0px 6em 0px 0px;
+}
+
+#partage div:first-child{
+	align-self: flex-end;
+}
+
+#partage div:first-child img{
+	position: relative;
+	width: 100%;
+	bottom: -20px;
+}
+
+/*CHATBOT*/
+#chatbot{
+	display: flex;
+	padding-left: 5.1em;
+}
+
+#chatbot .text_section{
+	align-self: center;
+	max-width: 44%;
+}
+
+#chatbot .image_section{
+	align-self: flex-end;
+	margin-left: auto
+}
+
+#chatbot .image_section img{
+	position: relative;
+	width: 100%;
+}
+
+#chatbot p{
+	margin-bottom: 50px;
+}
+
+#chatbot .btn{
+	color: #00d2ff;
+	background-color: #fff;
+}
+
+/*OFFRES*/
+#offres{
+	background-image: url(../images/pricing_bg.png);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+#offres .section{
+	padding: 0 !important;
+}
+
+#offres .content h1{
+	text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.35);
+}
+
+#offres .content .blue{
+	display: block;
+	color: #00d2ff;
+}
+
+#offres .content p{
+	margin: 0 0 80px;
+	font-size: 2.6em;
+	text-transform: uppercase;
+}
+
+#offres .content .btn{
+	background-color: #00d2ff;
+}
+
+
+/*SCROLL ICON*/
+/*Animation Keyframes*/
+@keyframes scroll_2 {
+  0%   { transform: translateY(0); opacity: 1; }
+  25%  { opacity: 1; }
+  75%  { transform: translateY(.75em); opacity: 0; }
+  100% { transform: translateY(0); opacity: 0; }
+}
+
+/*CSS*/
+.scroll {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.scroll-icon {
+	display: block;
+	position: relative;
+	height: 45px;
+	width: 26px;
+	border: 2px solid #fff;
+	border-radius: 1em;
+}
+
+.scroll-icon__pivot {
+	display: block;
+	position: absolute;
+	left: 50%;
+	background: #fff;
+	transform-origin: top center;
+	backface-visibility: hidden;
+	height: .5em;
+	width: .5em;
+	top: .625em;
+	margin-left: -.25em;
+	border-radius: 50%;
+	animation: scroll_2 2s ease-out infinite;
+}
+
 /*ANIMATIONS ELEMENTS*/
 @keyframes slideInUp {
   from {
