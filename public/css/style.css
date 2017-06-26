@@ -247,9 +247,8 @@ video::-webkit-media-controls {
 	margin-left: auto
 }
 
-#chatbot .image_section img{
-	position: relative;
-	width: 100%;
+#chatbot div:last-child {
+	margin-left: auto;
 }
 
 #chatbot p{

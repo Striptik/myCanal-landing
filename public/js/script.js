@@ -49,7 +49,7 @@ $(document).ready(function() {
         verticalCentered: false,
         sectionsColor : ['#1d1d1d', '#1d1d1d', '#52b64f', '#fbb300', '#00d2ff', '#1d1d1d', '#22252a'],
         paddingTop: '3em',
-        paddingBottom: '10px',
+        paddingBottom: 0,
         responsiveWidth: 0,
         responsiveHeight: 0,
         responsiveSlides: false,
